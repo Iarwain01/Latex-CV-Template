@@ -4,11 +4,15 @@
 \documentclass[11 pt,oneside,a4paper,titlepage]{article}
 \usepackage{preamble}
 \graphicspath{{PIC/}}
+\usepackage{xcolor}
+\definecolor{mitred}{RGB}{163,31,52}
+\definecolor{mitgray}{RGB}{119,119,119}
+\definecolor{Magenta}{RGB}{255, 0, 255}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\sidebar{sideBarColor!25}
-\simpleheader{titleBackColor}{Md}{Al-Mamun}{AI Engineer | Data Analyst}{white}
+\sidebar{sideBarColor!20}
+\simpleheader{titleBackColor!60}{Md}{Al-Mamun}{Python Developer | Data Analyst}{white}
 
 % Start Minipages
 \vspace*{3.49cm}% start 8 cm from the top of the page}
@@ -32,12 +36,12 @@
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Profile section
-        \ruleline{\textbf{About me}}
+        \ruleline{\textbf{\textcolor{mitred}{About me}}}
         %\lipsum[150] %
         Proficient in various operating systems such as Windows, Linux, and MacOS. Strong knowledge of virtualization technologies such as VMware and Hyper-V. Passionate about emerging technologies and dedicated to staying up-to-date with the latest industry trends. I am highly proficient in SQL, Python, and data visualization tools such as Tableau, and I am skilled at communicating complex information to both technical and non-technical audiences. I am passionate about using data to drive business success, and am constantly seeking new ways to improve my skills and stay ahead of the curve in this dynamic field.
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Contact Section
-        \ruleline{\textbf{Contact}}
+        \ruleline{\textbf{\textcolor{mitred}{Contact}}}
         \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
         \matrix [
         column 1/.style={anchor=center,contactIcon},
@@ -62,7 +66,7 @@
         \end{tikzpicture} 
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \ruleline{\textbf{Languages}}
+        \ruleline{\textbf{\textcolor{mitred}{Languages}}}
         \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
         \matrix [
         column 1/.style={anchor=center,contactIcon},
@@ -83,8 +87,8 @@
         \scriptsize
         \begin{center}
             \quad
-            \qrcode[height=3cm]{
-               https://www.facebook.com/alamin.wpcab/} \\
+            \qrcode[height=3.5cm]{
+               https://www.hackerrank.com/mac4br3?hr_r=1/} \\
             \vspace*{0.5cm}
         \end{center}
         
@@ -94,32 +98,63 @@
 %%%%% MAIN SECTION %%%%%%%%%%%%%%%%%%%%
     \adjustbox{valign=t}{\begin{minipage}{11.3cm}
         \vspace*{1cm}
-        \section*{{\faGraduationCap} EDUCATION}
+        \section*{\textcolor{mitred}{{\faGraduationCap} EDUCATION}}
 
-        \MySection{2018-2022}{wub.png}{B.Sc}{World University of Bangladesh}{Dhaka, Bangladesh}{Computer Science \& Engineering}{During their undergraduate years, I demonstrated exceptional aptitude in various areas of CSE, including programming, algorithms, software development, and data structures. My was consistently excelled in my coursework, displaying a deep understanding of fundamental concepts and their practical applications. Apart from academic achievements, I was actively engaged in extracurricular activities related to CSE. My participated in coding competitions, hackathons, and technology-oriented clubs, help me to honing my problem-solving skills and collaborative abilities.  \\\textbf{C.G.P.A: 2.87/4.00 }}
+        \MySection{\textcolor{mitgray}{2018-2022}}{wub.png}{B.Sc}{World University of Bangladesh}{Dhaka, Bangladesh}{Computer Science \& Engineering}{During their undergraduate years, I demonstrated exceptional aptitude in various areas of CSE, including programming, algorithms, software development, and data structures. My was consistently excelled in my coursework, displaying a deep understanding of fundamental concepts and their practical applications. Apart from academic achievements, I was actively engaged in extracurricular activities related to CSE. My participated in coding competitions, hackathons, and technology-oriented clubs, help me to honing my problem-solving skills and collaborative abilities.  \\\textbf{C.G.P.A: 2.87/4.00 }}
             
         \vspace*{0.22cm}
             
-        \MySection{2015-2017}{NISC.png}{H.S.C}{Nabakumar Institution \& Dr. Shahidullah College}{Dhaka, Bangladesh}{Science}{
+        \MySection{\textcolor{mitgray}{2015-2017}}{NISC.png}{H.S.C}{Nabakumar Institution \& Dr. Shahidullah College}{Dhaka, Bangladesh}{Science}{
 Firstly, science helps our understanding of the world around us. Everything we know about the universe, from how trees reproduce to what an atom is made up of, is the result of scientific research and experiment. Human progress throughout history has largely rested on advances in science.\\\textbf{G.P.A: 3.29/5.00}}
                 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Work Experience
-        \section*{{\faSuitcase} WORK EXPERIENCE}
+        \section*{\textcolor{mitred}{{\faSuitcase} WORK EXPERIENCE}}
             
-        \MySectionNoPic{2018-2019}{Asst. Supervisor}{Dhaka, Bangladesh}{\textbf{China Harbour Engineering Company}}{Here my technical work was to Measured and marked property lines and key topographic features. Supervised survey projects measuring volume capacity of landfills and containment ponds}  
+        \MySectionNoPic{\textcolor{mitgray}{2018-2019}}{Asst. Supervisor}{Dhaka, Bangladesh}{\textbf{China Harbour Engineering Company}}{It was a project under the Bangladesh govt. Here my technical work was to Measured and marked property lines and key topographic features. Supervised survey projects measuring volume capacity of landfills and containment ponds.}  
             
         \vspace*{0.22cm}
             
-        \MySectionNoPic{2010-2020}{Account Officer}{Dhanmondi, Dhaka}{\textbf{The Buffet show Restaurant}}{Here my technical work was toDeveloped and executed marketing programs and general business solutions resulting in increased
+        \MySectionNoPic{\textcolor{mitgray}{2020-2022}}{Digital Marketing}{International}{\textbf{Fiverr}}{Here my technical work was to Developed and executed marketing programs and general business solutions resulting in increased
 company exposure, customer traffic and elevated sales numbers. Developed technical and non-technical marketing
-presentations, public relations campaigns, articles and newsletters}  
+presentations, public relations campaigns, articles and newsletters.}  
+
+            \vspace*{0.22cm}
             
+        \MySectionNoPic{\textcolor{mitgray}{2023-Present}}{Data Engineering}{International}{\textbf{Upwork}}{Here I provide Analytical Expertise on Data analysis and Data manupulation. My technical are Data Visualization and Feature Engineering. I train Data by using ML technique for prediction and Other Services.}  
         \vspace*{0.6cm}
-           %%%%%%%%%%%%%%%%%%%% 
-           %%%%%%%%%%%5%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %Publications
+        \section*{\textcolor{mitred}{{\aiOBP} PUBLICATIONS/PROJECT}}
+            
+        \publication{Thesis}{2022}{HMalware Detection using Machine Learning Model}{Md Al-Mamun, Md Redwan, Tamanna Zaman Tammi}{World University of Bangladesh}{Unpublished}
+            
+        \vspace*{0.22cm}
+             
+        \publication{Journal}{on-going}{Informstion Security on Big Data}{Md Al-Mamun}{Personal}{}
+            
+        \vspace*{0.22cm}
+            
+        % \publication{Conference Proceedings}{1724}{How I lost my ship and how to get it back}{Jack Sparrow}{Conference in Tortuga}{10.5220/doidoidoi}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \end{minipage}} %
+
+% Second Page
+\newpage
+
+\sidebar{sideBarColor!20}
+\newpageheader{mitgray}{Md}{Al-Mamun}{Python Developer 
+ \faLightbulbO \hspace{1mm} Data Analyst}{white}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{7.3cm} 
+\vspace*{0.4cm} % text starts 0.4cm under the top the header
+
+%%%%%%%%%%%5%%%%%%%%%%%%%%%%
 % Skill and Strengths 
-    \ruleline{\textbf{Soft Skills and Strengths}}
+    \ruleline{\textbf{\textcolor{mitred}{{Soft Skills and Strengths}}}}
     \vspace*{-0.5cm}
     \begin{center}
         \cvtag{Creativity}\cvtag{Curiosity}\cvtag{Flexibility}\cvtag{Self Confidence}\cvtag{Ability to Plan and Organize} \cvtag{Autonomy}\cvtag{Adaptability} \cvtag{Eye for Details}\cvtag{Problem Solving}\cvtag{Team Working}\cvtag{Love Learning New Things}\cvtag{Leadership}\cvtag{Good Communication}\cvtag{Managing Information}\cvtag{Diplomacy}\cvtag{Good Listener}\cvtag{Patience}
@@ -128,42 +163,13 @@ presentations, public relations campaigns, articles and newsletters}
  \vspace*{0.6cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Professional Skills 
-    \ruleline{\textbf{Professional Skills}}
+    \ruleline{\textbf{\textcolor{mitred}{{Professional Skills}}}}
     \begin{center}
         \cvtag{C/C++}\cvtag{ML Engineering}\cvtag{Python}\cvtag{R programming Language}\cvtag{MySQL/ PostgreSQL/OracleDBA}\cvtag{Web Scraping}\cvtag{Data Analysis}\cvtag{Machine Learning}\cvtag{Artificial Intelligence}\cvtag{Statistical Programming}\cvtag{Rust}\cvtag{Data Science}\cvtag{LaTex}\cvtag{Ruby-Rails}\cvtag{Pandas/Numpy/Seaborn}\cvtag{Keras/ Scikit-learn}\cvtag{Tensorflow}\cvtag{Power BI / Tableau}
     \end{center}
-    
-    \end{minipage}} %
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Second Page
-\newpage
-
-\sidebar{sideBarColor!25}
-\newpageheader{titleBackColor}{Md}{Al-Mamun}{AI Engineer 
- \faLightbulbO \hspace{1mm} Data Analyst}{white}
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
-\adjustbox{valign=t}{%
-\begin{minipage}{7.3cm} 
-\vspace*{0.4cm} % text starts 0.4cm under the top the header
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %Publications
-        % \section*{{\aiOBP} PUBLICATIONS}
-            
-        % \publication{Journal Article}{1729}{How I almost got killed by Lady Swan}{Jack Sparrow, Elizabeth Swan, William Turner III, Davy Jones}{Tortuga Printing Press}{10.3389/doicodedoicode}
-            
-        % \vspace*{0.22cm}
-             
-        % \publication{Abstract}{1725}{The Kraken and other stories}{Jack Sparrow, Hector Barbossa, Jack the Monkey, Joshamee Gibbs}{1st Congress of Pirate}{10.1016/doicodedoicode}
-            
-    %     \vspace*{0.22cm}
-            
-    %     \publication{Conference Proceedings}{1724}{How I lost my ship and how to get it back}{Jack Sparrow}{Conference in Tortuga}{10.5220/doidoidoi}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Other Interests
-    \ruleline{\textbf{Other Interests}}
+    \ruleline{\textbf{\textcolor{mitred}{Interests}}}
     \small
     \begin{multicols}{2}
         \begin{itemize} 
@@ -178,7 +184,7 @@ presentations, public relations campaigns, articles and newsletters}
 
      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % QR Code
-        \ruleline{\textbf{Download My CV}}
+        \ruleline{\textbf{\textcolor{mitred}{Download My CV}}}
         \scriptsize
         \centering
         Download my CV via the QR below \aiOverleaf.
@@ -198,7 +204,7 @@ presentations, public relations campaigns, articles and newsletters}
     \vspace*{0.4cm}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Peer Reviews
-    \section*{{\faBook} ACADEMIC PEER REVIEWS}
+    \section*{\textcolor{mitred}{{\faBook} ACADEMIC PEER REVIEWS}}
     \footnotesize I did academic peer review for the following journals: 
     \begin{itemize}
         \footnotesize
@@ -207,7 +213,7 @@ presentations, public relations campaigns, articles and newsletters}
         
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Information Technology Skills
-    \section*{{\faDesktop} INFORMATION TECHNOLOGY SKILLS}
+    \section*{\textcolor{mitred}{{\faDesktop} INFORMATION TECHNOLOGY SKILLS}}
     
     \ITCcompetence{Data Analysis}{
     \textbf{Jupyter Notebook}: \textit{Higly Specialized}\\
@@ -244,7 +250,7 @@ presentations, public relations campaigns, articles and newsletters}
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Programming Languages
-    \section*{{\faCode} PROGRAMMING LANGUAGES}
+    \section*{\textcolor{mitred}{{\faCode} PROGRAMMING LANGUAGES}}
     \vspace*{-0.5cm}
     \begin{multicols}{2}    
     \begin{itemize}
@@ -264,7 +270,7 @@ presentations, public relations campaigns, articles and newsletters}
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Certificates
-    \section*{{\faCertificate} CERTIFICATES}
+    \section*{\textcolor{mitred}{{\faCertificate} CERTIFICATES}}
     
     \adjustbox{valign=t}{\begin{minipage}{2cm}
     \begin{center}
